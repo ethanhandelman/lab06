@@ -7,7 +7,7 @@ public class CircleBuilder implements Runnable {
     private int width = 5;
     private Repository repo;
     private int x;
-    private int y;
+    private int ybounds;
 
     public CircleBuilder(Repository repository, int xloc, int yloc){
         repo = repository;

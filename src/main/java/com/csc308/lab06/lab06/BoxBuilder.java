@@ -12,6 +12,7 @@ public class BoxBuilder implements Runnable{
     private int xbounds;
 
     private int ybounds;
+    // bounds of x
 
     public BoxBuilder(Repository repository, int xloc, int yloc){
         repo = repository;
