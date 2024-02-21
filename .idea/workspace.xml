@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f660b0c3-2e3d-4375-8f99-0dec22e5a862" name="Changes" comment="First version">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f660b0c3-2e3d-4375-8f99-0dec22e5a862" name="Changes" comment="With add funcs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csc308/lab06/lab06/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csc308/lab06/lab06/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csc308/lab06/lab06/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csc308/lab06/lab06/Screen.java" afterDir="false" />
@@ -71,7 +70,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708473342440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="With add funcs">
+      <option name="closed" value="true" />
+      <created>1708473875755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708473875755</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version" />
-    <option name="LAST_COMMIT_MESSAGE" value="First version" />
+    <MESSAGE value="With add funcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="With add funcs" />
   </component>
 </project>

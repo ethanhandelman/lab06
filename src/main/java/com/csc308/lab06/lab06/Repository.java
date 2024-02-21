@@ -17,11 +17,11 @@ public class Repository {
         circles = new ArrayList<>();
     }
 
-    private void addBox(Rectangle rect){
+    public void addBox(Rectangle rect){
         boxes.add(rect);
     }
 
-    private void addCircle(Circle circ){
+    public void addCircle(Circle circ){
         circles.add(circ);
     }
 
