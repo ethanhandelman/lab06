@@ -17,6 +17,14 @@ public class Repository {
         circles = new ArrayList<>();
     }
 
+    private void addBox(Rectangle rect){
+        boxes.add(rect);
+    }
+
+    private void addCircle(Circle circ){
+        circles.add(circ);
+    }
+
     public static Repository getInstance(){
         if(_instance == null){
             _instance = new Repository();

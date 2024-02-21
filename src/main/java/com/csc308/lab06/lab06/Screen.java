@@ -12,7 +12,8 @@ public class Screen {
     @FXML
     private void initialize(){
         repo = Repository.getInstance();
-
+        BoxBuilder bb = new BoxBuilder(repo, screenPanel.getWidth(), screenPanel.getHeight());
+        CircleBuilder cb = new CircleBuilder(repo, screenPanel.getWidth(), screenPanel.getHeight());
     }
 
 }
