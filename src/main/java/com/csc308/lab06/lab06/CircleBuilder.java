@@ -1,31 +1,34 @@
 package com.csc308.lab06.lab06;
 
+import java.util.Random;
 import javafx.scene.shape.Circle;
 
 public class CircleBuilder implements Runnable {
 
     private int width = 5;
     private Repository repo;
-    private int x;
-    private int ybounds;
+    private double xbounds;
+    private double ybounds;
 
-    public CircleBuilder(Repository repository, int xloc, int yloc){
+    public CircleBuilder(Repository repository, double xloc, double yloc){
         repo = repository;
-        x = xloc;
-        y = yloc;
+        xbounds = xloc;
+        ybounds = yloc;
 
     }
 
-    public void buildCircle(int x, int y){
+    private Circle buildCircle(double x, double y) {
         Circle c = new Circle(width);
-        c.setTranslateX(x);
-        c.setTranslateY(y);
+        c.setTranslateX(xbounds * Math.random());
+        c.setTranslateY(ybounds * Math.random());
 
     }
 
     @Override
     public void run() {
 
-        buildCircle(x, y);
+        Circle c = buildCircle(xbounds, ybounds);
+        repo.addCircle(c);
+
     }
 }

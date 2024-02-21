@@ -9,26 +9,27 @@ public class BoxBuilder implements Runnable{
 
     private Repository repo;
 
-    private int xbounds;
+    private double xbounds;
 
-    private int ybounds;
+    private double ybounds;
     // bounds of x
 
-    public BoxBuilder(Repository repository, int xloc, int yloc){
+    public BoxBuilder(Repository repository, double xloc, double yloc){
         repo = repository;
         xbounds = xloc;
         ybounds = yloc;
     }
 
-    public void buildBox(int x, int y){
+    private Rectangle buildBox(double x, double y){
         Rectangle r = new Rectangle(x, y);
-        r.setTranslateX();
-        r.setTranslateY(y);
+        r.setTranslateX(x * Math.random());
+        r.setTranslateY(y * Math.random());
 
     }
 
     @Override
     public void run() {
-        buildBox(x, y);
+        Rectangle r = buildBox(xbounds, ybounds);
+        repo.addBox(r);
     }
 }
